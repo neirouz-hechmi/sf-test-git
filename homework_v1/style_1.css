@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --primary-color : #25C4F4;
+}
+body {
+    font-family: "Poppins",Arial, Helvetica, sans-serif;
+    background-color: #FAFAFA;
+    height: 100vh;
+}
+a {
+    color: var(--primary-color);
+}
+.container,
+.container main #paragraph,
+.container main,
+.container main #code,
+.container footer {
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    margin: 2rem;
+    background-color: white;
+    padding: 3rem;
+    gap: 4rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem ;
+}
+.logo span {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.container main #paragraph {
+    gap: 1.5rem;
+}
+
+.container main #paragraph p {
+    color: #333333;
+} 
+.container main #paragraph p,
+.container main #paragraph p a {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.container main {
+    gap: 1rem;
+    align-items: flex-start;
+}
+.container main #code {
+    gap: 1rem;
+}
+.container main #code #carts{
+    display: flex;
+    align-items: center;/*to justify '-' in the center*/
+    gap: 1rem;
+    color: #98A2B3;
+    font-weight: bolder;
+}
+.container main #code #carts .group{
+    display: flex;
+    gap: 1rem;
+}
+.container main #code #carts .group span {
+    padding: 1rem 2rem;
+    border: 1px solid #98A2B3;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: 2rem;
+}
+button {
+    background-color: #25C4F4;
+    color: white;
+    font-weight: 550;
+    padding:  1.2rem 5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+.container footer {
+    gap: 2.5rem;
+}
+.container footer #info p {
+    color: #475467;
+    font-weight: 400;
+}
+.container footer #logo-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container footer #logo-contact .contact {
+    display: flex;
+    gap: 1.3rem;
+}
+.container footer #logo-contact .contact img {
+    width: 28px;
+    height: 28px;
+}
+@media (max-width: 960px) {
+    .container,
+    .container main #paragraph,
+    .container main,
+    .container main #code
+    {
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        text-align: center;
+    }
+    .container main #code #carts .group span {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+@media (max-width: 570px){
+    .container {
+        gap: 1.8rem;
+    }
+    .container main #paragraph p,
+    .container main #paragraph p a {
+        font-size: 0.75rem;
+    }
+    .container main #code #carts .group{
+        gap: 0.6rem;
+    }
+    .container main #code #carts .group span {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.8rem;
+    }
+    button {
+        font-weight: 400;
+        padding:  0.8rem 3rem;
+    }
+    .container footer #info p {
+        font-size: 0.6rem;
+    }
+    .logo{
+        gap: 0.5rem ;
+    }
+    .logo span {
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+    .container footer #logo-contact {
+        display: flex;
+        gap: 2.5rem;
+    }
+    .container footer #logo-contact .contact {
+        gap: 0.5rem;
+    }
+    .container footer #logo-contact .contact img {
+        width: 15px;
+        height: 15px;
+    }
+}
+@media (max-width: 375px) {
+    .container {
+        gap: 1rem;
+        margin: 0;
+    }
+
+}
